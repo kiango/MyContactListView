@@ -47,7 +47,7 @@ public class MainActivity extends ListActivity {
     protected void onListItemClick(ListView listView, View v, int position, long id) {
         super.onListItemClick(listView, v, position, id);
 
-        // when we don't know the columns name at clicked list position we get it like below:
+        // when we don't know the columns name at clicked list position we get it like below
         String name = cursor.getString(cursor.getColumnIndex(column[0]));
         String number = cursor.getString(cursor.getColumnIndex(column[1]));
         Toast.makeText(getBaseContext(), name +"\n"+ number, Toast.LENGTH_SHORT).show();
